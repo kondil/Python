@@ -1,5 +1,9 @@
 These are my notes in Python.
 
+Done ::
+- Added strings in 002_Variables/002c_strings.py
+- Added tuples in 003_Collections/003a_Tuples.py .
+
 toDo ::
 - 002_Variables in alpha mode.
 - 003_Collections in alpha mode.
