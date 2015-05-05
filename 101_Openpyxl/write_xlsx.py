@@ -1,17 +1,15 @@
 #!/usr/bin/env python
-
 # This is a tutorial on how to create an xlsx Workbook using the Openpyxl library.
-
-# How to create a new excel and write the data.
-
 from openpyxl import Workbook
 
 # Let's create a Workbook.
-wb2 = Workbook()
+wb = Workbook()
 
 # Let's grab the active Worksheet.
-ws2 = wb2.active
-ws2['A1'] = 42
-ws2.append([1,2,3])
-wb2.save("tmp.xlsx")
+ws = wb.active
+ws['A1'] = 42
+ws.append([1,2,3])
+ws1 = wb.create_sheet(0, 'tmp')
+wb.get_sheet_names()
+wb.save("tmp.xlsx")
 
