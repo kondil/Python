@@ -23,3 +23,7 @@ print "Added a fruit using slicing. ", fruit
 fruit[4:5] = []
 print "Deleted the fruit using slicing. ", fruit
 
+# Append in the end of the list.
+fruit.append("Watermelon")
+print fruit
+
