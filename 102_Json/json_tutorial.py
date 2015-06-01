@@ -30,4 +30,17 @@ print json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4, separators=(',', ':
     "6": 7
 }
 
+# data = json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4, separators=(',', ': '))
 
+with open('data.json', 'w') as outfile:
+	json.dumps({'4': 5, '6': 7}, outfile, sort_keys=True, indent=4, separators=(',', ': '))
+
+from pprint import pprint
+
+with open('data.json') as data_file:    
+	data = json.load(data_file)
+	print "Haaa!!!"
+	pprint(data)
+	print type(data)
+#	data["4"]
+#	data["6"]
